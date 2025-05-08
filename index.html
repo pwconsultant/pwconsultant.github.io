@@ -1,5 +1,14 @@
 <h1>Hello World</h1>
 <p>This is a simple HTML page.</p>
 <p>Welcome to my website!</p>
-<p>Enjoy your stay!</p>
+<p>----</p>
+<h2>N8N Chat Widget</h2>
 
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://pwcon.app.n8n.cloud/webhook/2f3c79b1-052e-442a-ba13-69a99b386a2e/chatK_URL'
+	});
+</script>
