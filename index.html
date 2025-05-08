@@ -10,6 +10,19 @@
 
 	createChat({
 		webhookUrl: 'https://pwcon.app.n8n.cloud/webhook/2f3c79b1-052e-442a-ba13-69a99b386a2e/chat',
-        initialMessages: ['Hi, Mustafa here.  Let me know if you have any questions!']
+        showWelcomeScreen: false,
+	    defaultLanguage: 'en',
+        initialMessages: [
+                'Yo, How can I help?',
+                'I am Ben Dover, let me know if you have any questions!'],
+        i18n: {
+            en: {
+                title: 'Yo friend! 👋',
+                subtitle: "Start a chat. Maybe we can help!",
+                footer: '',
+                getStarted: 'New Conversation',
+                inputPlaceholder: 'Type your question..',
+            },
+	    },
 	});
 </script>
